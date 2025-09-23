@@ -1,0 +1,17 @@
+{
+  "name": "api-correios",
+  "version": "1.0.0",
+  "description": "API desenvolvida para a simulação de dados de produtos em tranportes/transportadoras",
+  "main": "app.js",
+  "scripts": {
+    "test": "node app.js",
+    "dev": "nodemon watch app.js",
+    "start": "node app.js"
+  },
+  "author": "MNazaré",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0",
+    "nodemon": "^3.1.10"
+  }
+}
