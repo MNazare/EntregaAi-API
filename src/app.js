@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const port = 3000;
 
-// Mock de pacotes fictícios
+// Mock de dados dos pacotes
 const pacotes = [
   {
     id: 1,
@@ -103,7 +103,7 @@ app.get('/pacotes', (req, res) => {
   res.json(pacotes);
 });
 
-// Rota para buscar um pacote específico pelo ID
+// Rota para buscar um pacote específico usando ID
 app.get('/pacotes/:id', (req, res) => {
   const id = parseInt(req.params.id);
   const pacote = pacotes.find(p => p.id === id);
